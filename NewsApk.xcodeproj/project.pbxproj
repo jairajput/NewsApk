@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D80CE78E2BD15531006E7875 /* NewsApkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CE78D2BD15531006E7875 /* NewsApkApp.swift */; };
+		D80CE7902BD15531006E7875 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CE78F2BD15531006E7875 /* ContentView.swift */; };
+		D80CE7922BD15533006E7875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D80CE7912BD15533006E7875 /* Assets.xcassets */; };
+		D80CE7952BD15533006E7875 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D80CE7942BD15533006E7875 /* Preview Assets.xcassets */; };
+		D80CE79F2BD155D0006E7875 /*   ArticleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CE79E2BD155D0006E7875 /*   ArticleRowView.swift */; };
+		D80CE7A12BD155F8006E7875 /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CE7A02BD155F8006E7875 /* ArticleListView.swift */; };
+		D80CE7A32BD15611006E7875 /* NewsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CE7A22BD15611006E7875 /* NewsDetailView.swift */; };
+		D80CE7A52BD1562C006E7875 /* NewsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CE7A42BD1562C006E7875 /* NewsHeaderView.swift */; };
+		D80CE7A72BD1564E006E7875 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CE7A62BD1564E006E7875 /* Article.swift */; };
+		D80CE7A92BD1566B006E7875 /* NewsApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CE7A82BD1566B006E7875 /* NewsApiResponse.swift */; };
+		D80CE7AB2BD1568E006E7875 /* news.json in Resources */ = {isa = PBXBuildFile; fileRef = D80CE7AA2BD1568E006E7875 /* news.json */; };
+		D80CE7B02BD15725006E7875 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CE7AF2BD15725006E7875 /* Login.swift */; };
+		D80CE7B22BD15749006E7875 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CE7B12BD15749006E7875 /* CustomTextField.swift */; };
+		D80CE7B42BD157BD006E7875 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CE7B32BD157BD006E7875 /* LoginViewModel.swift */; };
+		D80CE7C02BD15ADD006E7875 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D80CE7BF2BD15ADD006E7875 /* FirebaseAuth */; };
+		D80CE7C22BD15AE5006E7875 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = D80CE7C12BD15AE5006E7875 /* GoogleSignIn */; };
+		D80CE7C42BD15AE5006E7875 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D80CE7C32BD15AE5006E7875 /* GoogleSignInSwift */; };
+		D80CE7C62BD162A2006E7875 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CE7C52BD162A2006E7875 /* Authentication.swift */; };
+		D80CE7C82BD1648A006E7875 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D80CE7C72BD1648A006E7875 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D80CE78A2BD15531006E7875 /* NewsApk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D80CE78D2BD15531006E7875 /* NewsApkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsApkApp.swift; sourceTree = "<group>"; };
+		D80CE78F2BD15531006E7875 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D80CE7912BD15533006E7875 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D80CE7942BD15533006E7875 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D80CE79E2BD155D0006E7875 /*   ArticleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "  ArticleRowView.swift"; sourceTree = "<group>"; };
+		D80CE7A02BD155F8006E7875 /* ArticleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
+		D80CE7A22BD15611006E7875 /* NewsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailView.swift; sourceTree = "<group>"; };
+		D80CE7A42BD1562C006E7875 /* NewsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHeaderView.swift; sourceTree = "<group>"; };
+		D80CE7A62BD1564E006E7875 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		D80CE7A82BD1566B006E7875 /* NewsApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsApiResponse.swift; sourceTree = "<group>"; };
+		D80CE7AA2BD1568E006E7875 /* news.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = news.json; sourceTree = "<group>"; };
+		D80CE7AF2BD15725006E7875 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		D80CE7B12BD15749006E7875 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		D80CE7B32BD157BD006E7875 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		D80CE7C52BD162A2006E7875 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		D80CE7C72BD1648A006E7875 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D80CE7C92BD164A7006E7875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D80CE7CA2BD164F2006E7875 /* NewsApk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NewsApk.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D80CE7872BD15531006E7875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80CE7C42BD15AE5006E7875 /* GoogleSignInSwift in Frameworks */,
+				D80CE7C02BD15ADD006E7875 /* FirebaseAuth in Frameworks */,
+				D80CE7C22BD15AE5006E7875 /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D80CE7812BD15531006E7875 = {
+			isa = PBXGroup;
+			children = (
+				D80CE78C2BD15531006E7875 /* NewsApk */,
+				D80CE78B2BD15531006E7875 /* Products */,
+				D80CE7B52BD1582A006E7875 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D80CE78B2BD15531006E7875 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D80CE78A2BD15531006E7875 /* NewsApk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D80CE78C2BD15531006E7875 /* NewsApk */ = {
+			isa = PBXGroup;
+			children = (
+				D80CE7CA2BD164F2006E7875 /* NewsApk.entitlements */,
+				D80CE7C92BD164A7006E7875 /* Info.plist */,
+				D80CE7C72BD1648A006E7875 /* GoogleService-Info.plist */,
+				D80CE7AC2BD156FE006E7875 /* Auth */,
+				D80CE79D2BD15595006E7875 /* ViewModel */,
+				D80CE79C2BD1558B006E7875 /* Views */,
+				D80CE78D2BD15531006E7875 /* NewsApkApp.swift */,
+				D80CE78F2BD15531006E7875 /* ContentView.swift */,
+				D80CE7912BD15533006E7875 /* Assets.xcassets */,
+				D80CE7932BD15533006E7875 /* Preview Content */,
+				D80CE7AA2BD1568E006E7875 /* news.json */,
+			);
+			path = NewsApk;
+			sourceTree = "<group>";
+		};
+		D80CE7932BD15533006E7875 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D80CE7942BD15533006E7875 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D80CE79C2BD1558B006E7875 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D80CE79E2BD155D0006E7875 /*   ArticleRowView.swift */,
+				D80CE7A02BD155F8006E7875 /* ArticleListView.swift */,
+				D80CE7A22BD15611006E7875 /* NewsDetailView.swift */,
+				D80CE7A42BD1562C006E7875 /* NewsHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D80CE79D2BD15595006E7875 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D80CE7A62BD1564E006E7875 /* Article.swift */,
+				D80CE7A82BD1566B006E7875 /* NewsApiResponse.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D80CE7AC2BD156FE006E7875 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D80CE7AE2BD1570E006E7875 /* ViewModel */,
+				D80CE7AD2BD15708006E7875 /* View */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		D80CE7AD2BD15708006E7875 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D80CE7AF2BD15725006E7875 /* Login.swift */,
+				D80CE7B12BD15749006E7875 /* CustomTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D80CE7AE2BD1570E006E7875 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D80CE7B32BD157BD006E7875 /* LoginViewModel.swift */,
+				D80CE7C52BD162A2006E7875 /* Authentication.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D80CE7B52BD1582A006E7875 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D80CE7892BD15531006E7875 /* NewsApk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D80CE7982BD15533006E7875 /* Build configuration list for PBXNativeTarget "NewsApk" */;
+			buildPhases = (
+				D80CE7862BD15531006E7875 /* Sources */,
+				D80CE7872BD15531006E7875 /* Frameworks */,
+				D80CE7882BD15531006E7875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewsApk;
+			packageProductDependencies = (
+				D80CE7BF2BD15ADD006E7875 /* FirebaseAuth */,
+				D80CE7C12BD15AE5006E7875 /* GoogleSignIn */,
+				D80CE7C32BD15AE5006E7875 /* GoogleSignInSwift */,
+			);
+			productName = NewsApk;
+			productReference = D80CE78A2BD15531006E7875 /* NewsApk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D80CE7822BD15531006E7875 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					D80CE7892BD15531006E7875 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = D80CE7852BD15531006E7875 /* Build configuration list for PBXProject "NewsApk" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D80CE7812BD15531006E7875;
+			packageReferences = (
+				D80CE79B2BD1557F006E7875 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D80CE7B82BD158B0006E7875 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = D80CE78B2BD15531006E7875 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D80CE7892BD15531006E7875 /* NewsApk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D80CE7882BD15531006E7875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80CE7AB2BD1568E006E7875 /* news.json in Resources */,
+				D80CE7C82BD1648A006E7875 /* GoogleService-Info.plist in Resources */,
+				D80CE7952BD15533006E7875 /* Preview Assets.xcassets in Resources */,
+				D80CE7922BD15533006E7875 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D80CE7862BD15531006E7875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80CE7A72BD1564E006E7875 /* Article.swift in Sources */,
+				D80CE7902BD15531006E7875 /* ContentView.swift in Sources */,
+				D80CE7B42BD157BD006E7875 /* LoginViewModel.swift in Sources */,
+				D80CE78E2BD15531006E7875 /* NewsApkApp.swift in Sources */,
+				D80CE79F2BD155D0006E7875 /*   ArticleRowView.swift in Sources */,
+				D80CE7B22BD15749006E7875 /* CustomTextField.swift in Sources */,
+				D80CE7A12BD155F8006E7875 /* ArticleListView.swift in Sources */,
+				D80CE7A52BD1562C006E7875 /* NewsHeaderView.swift in Sources */,
+				D80CE7B02BD15725006E7875 /* Login.swift in Sources */,
+				D80CE7A92BD1566B006E7875 /* NewsApiResponse.swift in Sources */,
+				D80CE7A32BD15611006E7875 /* NewsDetailView.swift in Sources */,
+				D80CE7C62BD162A2006E7875 /* Authentication.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D80CE7962BD15533006E7875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D80CE7972BD15533006E7875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D80CE7992BD15533006E7875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NewsApk/NewsApk.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NewsApk/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NewsApk/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jai.NewsApk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D80CE79A2BD15533006E7875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NewsApk/NewsApk.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NewsApk/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NewsApk/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jai.NewsApk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D80CE7852BD15531006E7875 /* Build configuration list for PBXProject "NewsApk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D80CE7962BD15533006E7875 /* Debug */,
+				D80CE7972BD15533006E7875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D80CE7982BD15533006E7875 /* Build configuration list for PBXNativeTarget "NewsApk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D80CE7992BD15533006E7875 /* Debug */,
+				D80CE79A2BD15533006E7875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D80CE79B2BD1557F006E7875 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.24.0;
+			};
+		};
+		D80CE7B82BD158B0006E7875 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D80CE7BF2BD15ADD006E7875 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D80CE79B2BD1557F006E7875 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D80CE7C12BD15AE5006E7875 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D80CE7B82BD158B0006E7875 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		D80CE7C32BD15AE5006E7875 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D80CE7B82BD158B0006E7875 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D80CE7822BD15531006E7875 /* Project object */;
+}
